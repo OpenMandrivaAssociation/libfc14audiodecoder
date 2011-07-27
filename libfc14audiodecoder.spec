@@ -1,6 +1,6 @@
 %define name libfc14audiodecoder
 %define version 1.0.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define major 1
 %define libname %mklibname fc14audiodecoder %major
