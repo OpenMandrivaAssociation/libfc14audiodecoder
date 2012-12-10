@@ -1,19 +1,14 @@
-%define name libfc14audiodecoder
-%define version 1.0.2
-%define release %mkrel 2
-
 %define major 1
 %define libname %mklibname fc14audiodecoder %major
 %define develname %mklibname -d fc14audiodecoder
 Summary: Future Composer audio decoding library
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name: libfc14audiodecoder
+Version: 1.0.2
+Release: 3
 Source0: http://sourceforge.net/projects/xmms-fc/files/%name/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Sound
 Url: http://xmms-fc.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Decode music files written on a Commodore Amiga using Future Composer.
@@ -48,7 +43,7 @@ pieces, and partial reorganization for OOP.
 Group: Development/C
 Summary: Development files of %name
 Requires: %libname = %version-%release
-Provides: %name-devel = %version-%release
+Provides: %name-devel = %{EVRD}
 
 %description -n %develname
 Decode music files written on a Commodore Amiga using Future Composer.
@@ -71,19 +66,24 @@ pieces, and partial reorganization for OOP.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files -n %libname
-%defattr(-,root,root)
 %doc README
 %_libdir/%name.so.%{major}*
 
 %files -n %develname
-%defattr(-,root,root)
-%_libdir/%name.la
 %_libdir/%name.so
 %_includedir/fc14audiodecoder.h
+
+
+%changelog
+* Wed Jul 27 2011 Götz Waschk <waschk@mandriva.org> 1.0.2-2mdv2012.0
++ Revision: 691854
+- rebuild
+
+* Mon Jul 26 2010 Götz Waschk <waschk@mandriva.org> 1.0.2-1mdv2011.0
++ Revision: 560847
+- import libfc14audiodecoder
+
+
