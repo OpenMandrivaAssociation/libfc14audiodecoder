@@ -4,7 +4,7 @@
 Summary: Future Composer audio decoding library
 Name: libfc14audiodecoder
 Version: 1.0.2
-Release: 3
+Release: 4
 Source0: http://sourceforge.net/projects/xmms-fc/files/%name/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Sound
