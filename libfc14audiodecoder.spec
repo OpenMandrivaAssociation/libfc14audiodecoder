@@ -8,7 +8,7 @@ Release:	1
 Source0: http://sourceforge.net/projects/xmms-fc/files/%name/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Sound
-Url: http://xmms-fc.sourceforge.net/
+Url: https://xmms-fc.sourceforge.net/
 
 %description
 Decode music files written on a Commodore Amiga using Future Composer.
