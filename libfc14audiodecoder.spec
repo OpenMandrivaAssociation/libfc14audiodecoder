@@ -11,6 +11,11 @@ Group:	Sound
 Url:	https://github.com/mschwendt/libfc14audiodecoder
 Source0:	https://github.com/mschwendt/libfc14audiodecoder/releases/download/%{version}/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Decode music files written on a Commodore Amiga using Future Composer and.
 Hippel TFMX audio format.
