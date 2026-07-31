@@ -4,7 +4,7 @@
 
 Summary:	Future Composer and Hippel TFMX audio decoding library
 Name:	libfc14audiodecoder
-Version:	2.0.0
+Version:	2.0.2
 Release:	1
 License:	GPLv2+
 Group:	Sound
